@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title><%= pageTitle%></title>
+    <link rel="shortcut icon" href="/1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form action="/users/register" method="POST">
+    <h1 class="h3 mb-3 fw-normal">ثبت نام</h1>
+    <%- include("./includes/ErrorMessages.ejs")%>
+    <label for="inputEmail" class="visually-hidden">ایمیل</label>
+    <input type="email" name="email" name="email" id="inputEmail" class="form-control text-center" placeholder="ایمیل" required autofocus>
+    <label for="inputEmail" class="visually-hidden">نام و نام خوانوادگی</label>
+    <input type="" name="fullname" id="inputEmail" name="fullname" class="form-control text-center" placeholder="نام و نام خوانوادگی" required autofocus>
+    <label for="inputPassword" class="visually-hidden">رمز</label>
+    <input type="password" name="password" id="inputPassword" class="form-control text-center" name="password" placeholder="رمز" required>
+    <label for="inputPassword" class="visually-hidden">تکرار رمز عبور</label>
+    <input type="password" name="confirmPassword" name="confirmPassword" id="inputPassword" class="form-control text-center" placeholder="تکرار رمز عبور" required>
+    <div class="checkbox mb-3">
+      <label>
+        <a href="/users/login">حساب کاربری دارم</a>
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">ثبت نام</button>
+  </form>
+</main>
+
+
+<script src="/js/jquery-3.5.1.slim.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

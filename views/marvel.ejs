@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/marvel.css">
+    <title>مارول</title>
+</head>
+<body style="background-color: #111111;" class="cover">
+    <!-- header start -->
+    <section style="display: contents;" class="banner">
+        <header class="nav-menu">
+            <a href="#" class="logo">click <big style="color: black;">FILM</big></a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+            <div class="filmBx">
+                <video autoplay="" muted="" loop="" src="/video/1.mp4"></video>
+            </div>
+        <ul class="sci">
+            <li><a href="#"><img src="/img/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/twitter.png"></a></li>
+            <li><a href="#"><img src="/img/instagram.png"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="/">خانه</a></li>
+            <li><a href="/serial">سریال</a></li>
+            <li><a href="/film">فیلم</a></li>
+            <li><a href="/users/register">ورود / ثبت نام</a></li>
+        </ul>
+    </section>
+    <!-- header end -->
+    <!-- main start -->
+    <section class="fullpart">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>کاپیتان مارول</h2>
+                        <p class="">کاپیتیک فیلم ابرقهرمانی بر پایهٔ شخصیت کاپیتان مارول از مارول کامیکس است. این فیلم به تهیه‌کنندگی مارول استودیوز ساخته و توسط استودیو سینمایی والت دیزنی توزیع شد. این فیلم بیست و یکمین فیلم در دنی</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/img/marvel.png" alt="" class="award-img">
+                </div>
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>کاپیتان مارول</h2>
+                        <p class="">کاپیتیک فیلم ابرقهرمانی بر پایهٔ شخصیت کاپیتان مارول از مارول کامیکس است. این فیلم به تهیه‌کنندگی مارول استودیوز ساخته و توسط استودیو سینمایی والت دیزنی توزیع شد. این فیلم بیست و یکمین فیلم در دنی</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/img/home/marvel/2.png" alt="" class="award-img">
+                </div>
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>کاپیتان مارول</h2>
+                        <p class="">کاپیتیک فیلم ابرقهرمانی بر پایهٔ شخصیت کاپیتان مارول از مارول کامیکس است. این فیلم به تهیه‌کنندگی مارول استودیوز ساخته و توسط استودیو سینمایی والت دیزنی توزیع شد. این فیلم بیست و یکمین فیلم در دنی</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/img/home/marvel/3.png" alt="" class="award-img">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>کاپیتان امریکا</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam id, veniam nam iure ea obcaecati veritatis ab corporis recusandae necessitatibus laborum, nesciunt ad non magnam architecto est dolorum expedita.</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/img/home/marvel/1.png" alt="" class="award-img">
+                </div>
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>کاپیتان امریکا</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam id, veniam nam iure ea obcaecati veritatis ab corporis recusandae necessitatibus laborum, nesciunt ad non magnam architecto est dolorum expedita.</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/img/home/marvel/4.png" alt="" class="award-img">
+                </div>
+                <div class="card mt-5">
+                    <div class="content">
+                        <h2>کاپیتان امریکا</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam id, veniam nam iure ea obcaecati veritatis ab corporis recusandae necessitatibus laborum, nesciunt ad non magnam architecto est dolorum expedita.</p>
+                        <a href="#">دانلود فیلم</a>
+                    </div>
+                    <img src="/img/home/marvel/6.png" alt="" class="award-img">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- main end -->
+    <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+    <script type="text/javascript">
+        let video = document.querySelector('video');
+        window.addEventListener('scroll',function(){
+            let value =1 + window.scrollY/-600;
+            video.style.opacity=value
+        })
+    </script>
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/trailer.css">
+    <title>تریلر</title>
+</head>
+<body>
+    <div class="banner pt-2">
+        <div class="content">
+            <img src="/img/trailer/h.jpg" alt="">
+            <h2>Harry potter – Season 8 – Official Trailer</h2>
+            <p class="text-center">کتاب هفتم (کتاب فیلم‌های هری پاتر و یادگاران مرگ ۱ و هری پاتر و یادگاران مرگ۲ یکی است) هری پاتر کتابی است، که سرنوشت هری پاتر و دیگر شخصیت‌های داستان را مشخص می‌کند. مسئله اصلی داستان هری پاتر هفت پیدا کردن جان پیچ‌های باقی‌مانده و در نهایت نبرد نهایی با ولدمورت است. هری پاتر در این کتاب متوجه می‌شود که ۳ چیز به اسم یادگاران مرگ وجود دارد که صاحب آن‌ها ارباب مرگ می‌شود و تصمیم می‌گیرد به دنبال آن‌ها نیز برود. در این کتاب با گذشتهٔ دامبلدور نیز بیشتر آشنا می‌شویم.</p>
+            <a href="#" onclick="toggle();">تماشا</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="/video/h.mp4" controls="true"></video>
+        <img src="/img/close.png" class="close" onclick="toggle();"  alt="">
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector(".trailer")
+            var video = document.querySelector("video")
+            trailer.classList.toggle("active");
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
